@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "cai": {
+      "commandName": "Project",
+      "applicationUrl": "https://localhost:53957;http://localhost:53958"
+    }
+  }
+}
