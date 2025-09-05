@@ -14,7 +14,6 @@ using cai.Service.EmailSender;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using FluentEmail.Core.Interfaces;
 using FluentEmail.Smtp;
-using Microsoft.Extensions.Options;
 using cai.Service.ControllerService;
 
 namespace cai
