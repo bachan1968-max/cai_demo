@@ -5,7 +5,7 @@ namespace cai.Service.Database
     public class CaiDbContext : DbContext
     {
         public DbSet<PriceList> PriceLists { get; set; }
-        public DbSet<PriceListRow> PriceListsRow { get; set; }
+        public DbSet<PriceListRow> PriceListRows { get; set; }
 
         public CaiDbContext(DbContextOptions<CaiDbContext> options) : base(options)
         {
@@ -17,7 +17,7 @@ namespace cai.Service.Database
                 .Entity<PriceListRow>()
                 .HasOne<PriceList>()
                 .WithMany()
-                .HasForeignKey(p => p.Id);
+                .HasForeignKey(p => p.PriceListId);
             base.OnModelCreating(modelBuilder);
         }
     }

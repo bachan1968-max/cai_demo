@@ -25,7 +25,7 @@ namespace cai.Service.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "PriceListsRow",
+                name: "PriceListRows",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uniqueidentifier", nullable: false),
@@ -36,21 +36,26 @@ namespace cai.Service.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_PriceListsRow", x => x.Id);
+                    table.PrimaryKey("PK_PriceListRows", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_PriceListsRow_PriceLists_Id",
-                        column: x => x.Id,
+                        name: "FK_PriceListRows_PriceLists_PriceListId",
+                        column: x => x.PriceListId,
                         principalTable: "PriceLists",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_PriceListRows_PriceListId",
+                table: "PriceListRows",
+                column: "PriceListId");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.DropTable(
-                name: "PriceListsRow");
+                name: "PriceListRows");
 
             migrationBuilder.DropTable(
                 name: "PriceLists");

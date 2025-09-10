@@ -7,8 +7,8 @@
       "RelativeMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|solutionrelative:cai.service\\hangfiretasks\\getb2bstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D17FD2D7-9050-4009-9E2B-953CB69CB7FB}|cai\\cai.csproj|c:\\wwwroot\\cai_demo\\cai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D17FD2D7-9050-4009-9E2B-953CB69CB7FB}|cai\\cai.csproj|solutionrelative:cai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|c:\\wwwroot\\cai_demo\\cai.service\\database\\pricelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|solutionrelative:cai.service\\database\\pricelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|c:\\wwwroot\\cai_demo\\cai.service\\database\\caidbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -23,8 +23,12 @@
       "RelativeMoniker": "D:0:0:{12D4A435-C4A6-43A0-9FD0-C961892B1645}|cai.Domain\\cai.Domain.csproj|solutionrelative:cai.domain\\csvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|c:\\wwwroot\\cai_demo\\cai.service\\database\\pricelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|solutionrelative:cai.service\\database\\pricelist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D17FD2D7-9050-4009-9E2B-953CB69CB7FB}|cai\\cai.csproj|c:\\wwwroot\\cai_demo\\cai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D17FD2D7-9050-4009-9E2B-953CB69CB7FB}|cai\\cai.csproj|solutionrelative:cai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|c:\\wwwroot\\cai_demo\\cai.service\\database\\idbrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|solutionrelative:cai.service\\database\\idbrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -58,10 +62,6 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{a80febb4-e7e0-4147-b476-21aaf2453969}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
             },
             {
@@ -74,28 +74,28 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PriceList.cs",
+              "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\PriceList.cs",
+              "RelativeDocumentMoniker": "cai.Service\\Database\\PriceList.cs",
+              "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\PriceList.cs",
+              "RelativeToolTip": "cai.Service\\Database\\PriceList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T18:12:41.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
               "Title": "CaiDbContext.cs",
               "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\CaiDbContext.cs",
               "RelativeDocumentMoniker": "cai.Service\\Database\\CaiDbContext.cs",
               "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\CaiDbContext.cs",
               "RelativeToolTip": "cai.Service\\Database\\CaiDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAApAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T15:37:31.268Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CsvDto.cs",
-              "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Domain\\CsvDto.cs",
-              "RelativeDocumentMoniker": "cai.Domain\\CsvDto.cs",
-              "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Domain\\CsvDto.cs",
-              "RelativeToolTip": "cai.Domain\\CsvDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T15:06:50.97Z",
+              "WhenOpened": "2025-09-10T17:57:55.443Z",
               "EditorCaption": ""
             },
             {
@@ -106,22 +106,34 @@
               "RelativeDocumentMoniker": "cai.Service\\Database\\PriceListRow.cs",
               "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\PriceListRow.cs",
               "RelativeToolTip": "cai.Service\\Database\\PriceListRow.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAASwBEAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T14:16:49.857Z",
+              "WhenOpened": "2025-09-10T15:51:30.142Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "PriceList.cs",
-              "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\PriceList.cs",
-              "RelativeDocumentMoniker": "cai.Service\\Database\\PriceList.cs",
-              "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\PriceList.cs",
-              "RelativeToolTip": "cai.Service\\Database\\PriceList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "CsvDto.cs",
+              "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Domain\\CsvDto.cs",
+              "RelativeDocumentMoniker": "cai.Domain\\CsvDto.cs",
+              "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Domain\\CsvDto.cs",
+              "RelativeToolTip": "cai.Domain\\CsvDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-09T11:19:58.838Z",
+              "WhenOpened": "2025-09-10T15:19:53.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "IDbRepo.cs",
+              "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\IDbRepo.cs",
+              "RelativeDocumentMoniker": "cai.Service\\Database\\IDbRepo.cs",
+              "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\IDbRepo.cs",
+              "RelativeToolTip": "cai.Service\\Database\\IDbRepo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-10T14:07:55.142Z",
               "EditorCaption": ""
             },
             {
@@ -132,23 +144,22 @@
               "RelativeDocumentMoniker": "cai.Service\\HangfireTasks\\GetB2bStock.cs",
               "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Service\\HangfireTasks\\GetB2bStock.cs",
               "RelativeToolTip": "cai.Service\\HangfireTasks\\GetB2bStock.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAIwCwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAuwFwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T09:16:15.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai\\Program.cs",
               "RelativeDocumentMoniker": "cai\\Program.cs",
               "ToolTip": "C:\\wwwroot\\cai_demo\\cai\\Program.cs",
               "RelativeToolTip": "cai\\Program.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAIAxwFIAAABYAAAAAAAAAA==",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAwwEgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T23:50:00.265Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-05T23:50:00.265Z"
             }
           ]
         }

@@ -12,7 +12,7 @@ using cai.Service.Database;
 namespace cai.Service.Migrations
 {
     [DbContext(typeof(CaiDbContext))]
-    [Migration("20250910123308_InitialCreate")]
+    [Migration("20250910180640_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -45,6 +45,7 @@ namespace cai.Service.Migrations
             modelBuilder.Entity("cai.Service.Database.PriceListRow", b =>
                 {
                     b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Amount")
@@ -61,14 +62,16 @@ namespace cai.Service.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PriceListsRow");
+                    b.HasIndex("PriceListId");
+
+                    b.ToTable("PriceListRows");
                 });
 
             modelBuilder.Entity("cai.Service.Database.PriceListRow", b =>
                 {
                     b.HasOne("cai.Service.Database.PriceList", null)
                         .WithMany()
-                        .HasForeignKey("Id")
+                        .HasForeignKey("PriceListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });

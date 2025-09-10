@@ -7,6 +7,7 @@ using cai.Domain;
 using cai.Service.EmailSender;
 using System.Collections.Generic;
 using System.IO;
+using cai.Service.Database;
 
 namespace cai.Service.HangfireTasks
 {
@@ -16,15 +17,17 @@ namespace cai.Service.HangfireTasks
         protected readonly IOptions<AppSettings> _appSettings;
         protected readonly IEmailRepository _emailRepository;
         protected readonly CsvWriterFactory _csvFactory;
+        protected readonly IDbRepo _dbRepo;
 
         public GetB2bStock(ILogger<HangfireTask> logger, IB2bRepository b2bRepo, IOptions<AppSettings> appSettings,
-             IEmailRepository emailRepository, CsvWriterFactory csvFactory
+             IEmailRepository emailRepository, CsvWriterFactory csvFactory, IDbRepo dbRepo
             ) : base(logger)
         {
             _b2bRepo = b2bRepo ?? throw new ArgumentNullException(nameof(b2bRepo));
             _appSettings = appSettings ?? throw new ArgumentNullException(nameof(appSettings));
             _emailRepository = emailRepository ?? throw new ArgumentNullException(nameof(emailRepository));
             _csvFactory = csvFactory ?? throw new ArgumentNullException(nameof(_csvFactory));
+            _dbRepo = dbRepo ?? throw new ArgumentNullException(nameof(dbRepo));
         }
         protected override async Task DoJobAsync()
         {
@@ -32,9 +35,17 @@ namespace cai.Service.HangfireTasks
             if (items != null)
             {
                 var dtoItems = new List<CsvDto>();
-
+                var priceListGuid = Guid.NewGuid();
+                var pl = new PriceList(priceListGuid, string.Join(";", _appSettings.Value.SendB2bStock));
+                var priceListRows = new List<PriceListRow>();
                 foreach (var i in items)
                 {
+                    var itemIdOk = long.TryParse(i.ExternalItemId, out var externalItemId);
+                    if (!itemIdOk)
+                    {
+                        _logger.LogError("Item {ExternalItemId} is not long", i.ExternalItemId);
+                        continue;
+                    }
                     var priceOk = decimal.TryParse(i.WarePriceRUB, out decimal price);
                     if (!priceOk)
                     {
@@ -43,19 +54,15 @@ namespace cai.Service.HangfireTasks
                     }
                     if (price == 0) continue;
 
-                    var amountOkReserve = int.TryParse(i.APIAvailableReservedQty, out int amountTotal);
-                    if (!amountOkReserve)
+                    var amountOk = int.TryParse(i.APIAvailableReservedQty, out int amountTotal);
+                    if (!amountOk)
                     {
                         _logger.LogError("Item {ExternalItemId} is not a digit: {APIAvailableReservedQty}", i.ExternalItemId, i.APIAvailableReservedQty);
                         continue;
                     }
 
-                    dtoItems.Add(new CsvDto
-                    {
-                        ExternalItemId = i.ExternalItemId,
-                        Price = price.ToString("0.00"),
-                        Amount = amountTotal.ToString()
-                    });
+                    dtoItems.Add(new CsvDto(externalItemId, amountTotal, price));
+                    priceListRows.Add(new PriceListRow(priceListGuid, externalItemId, amountTotal, price));
                 }
                 var tempFolder = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "Temp");
                 if (!Directory.Exists(tempFolder))
@@ -83,6 +90,7 @@ namespace cai.Service.HangfireTasks
                 {
                     _logger.LogError(e, "Failed detete temporary file {fileNameOriginal}", fileNameOriginal);
                 }
+                await _dbRepo.AddDeliveredData(pl, priceListRows, new System.Threading.CancellationToken()); 
             }
         }
     }

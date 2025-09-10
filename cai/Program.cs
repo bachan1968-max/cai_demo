@@ -57,39 +57,40 @@ namespace cai
     })
                 .ConfigureServices((context, services) =>
                 {
-                            var config = context.Configuration;
-                            services.Configure<AppSettings>(context.Configuration.GetSection("AppSettings"));
-                            services.Configure<HttpClientSettings>(context.Configuration.GetSection("HttpClientSettings"));
-                            services.Configure<TaskSettings>(context.Configuration.GetSection("TaskSettings"));
-                            services.Configure<SmtpConfiguration>(context.Configuration.GetSection("SmtpConfiguration"));
+                    var config = context.Configuration;
+                    services.Configure<AppSettings>(context.Configuration.GetSection("AppSettings"));
+                    services.Configure<HttpClientSettings>(context.Configuration.GetSection("HttpClientSettings"));
+                    services.Configure<TaskSettings>(context.Configuration.GetSection("TaskSettings"));
+                    services.Configure<SmtpConfiguration>(context.Configuration.GetSection("SmtpConfiguration"));
 
-                            services.AddSingleton<TaskSettings>();
-                            services.AddSingleton<AppSettings>();
-                            services.AddSingleton<HttpClientSettings>();
-                            services.AddTransient<TaskRunner>();
-                            services.AddTransient<IB2bRepository, B2bRepository>();
-                            services.AddTransient<IEmailRepository, EmailRepository>();
-                            services.AddTransient<IControllerService, ControllerService>();
-                            services.AddSingleton<SmtpConfiguration>();
+                    services.AddSingleton<TaskSettings>();
+                    services.AddSingleton<AppSettings>();
+                    services.AddSingleton<HttpClientSettings>();
+                    services.AddTransient<TaskRunner>();
+                    services.AddTransient<IB2bRepository, B2bRepository>();
+                    services.AddTransient<IEmailRepository, EmailRepository>();
+                    services.AddTransient<IControllerService, ControllerService>();
+                    services.AddTransient<IDbRepo, DbRepo>();
+                    services.AddSingleton<SmtpConfiguration>();
 
-                            services.AddSingleton<SmtpClientFactory>();
+                    services.AddSingleton<SmtpClientFactory>();
 
-                            services.AddFluentEmail("no-reply@marvel.ru")
-                                    .AddRazorRenderer();
-                            services.TryAdd(ServiceDescriptor.Scoped<ISender>(provider
-                                => new SmtpSender(provider.GetRequiredService<SmtpClientFactory>().Create())));
-                            services.AddSingleton(new CsvHelper.Factory());
-                services.AddSingleton(new CsvWriterFactory(
-                services.BuildServiceProvider().GetRequiredService<CsvHelper.Factory>()));
+                    services.AddFluentEmail("no-reply@marvel.ru")
+                            .AddRazorRenderer();
+                    services.TryAdd(ServiceDescriptor.Scoped<ISender>(provider
+                        => new SmtpSender(provider.GetRequiredService<SmtpClientFactory>().Create())));
+                    services.AddSingleton(new CsvHelper.Factory());
+                    services.AddSingleton(new CsvWriterFactory(
+                    services.BuildServiceProvider().GetRequiredService<CsvHelper.Factory>()));
 
-                            services.AddScoped(provider =>
-                            {
-                                var connectionString = config.GetConnectionString("DefaultDB");
-                                var builder = new DbContextOptionsBuilder<CaiDbContext>();
-                                var options = builder.UseSqlServer(connectionString).Options;
+                    services.AddScoped(provider =>
+                    {
+                        var connectionString = config.GetConnectionString("DefaultDB");
+                        var builder = new DbContextOptionsBuilder<CaiDbContext>();
+                        var options = builder.UseSqlServer(connectionString).Options;
 
-                                return new CaiDbContext(options);
-                            }); 
+                        return new CaiDbContext(options);
+                    }); 
 
                     #region B2bHttpClient
                                 services.AddHttpClient<B2bHttpClient>()

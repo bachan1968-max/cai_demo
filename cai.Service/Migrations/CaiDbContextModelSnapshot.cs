@@ -42,6 +42,7 @@ namespace cai.Service.Migrations
             modelBuilder.Entity("cai.Service.Database.PriceListRow", b =>
                 {
                     b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
                         .HasColumnType("uniqueidentifier");
 
                     b.Property<int>("Amount")
@@ -58,14 +59,16 @@ namespace cai.Service.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("PriceListsRow");
+                    b.HasIndex("PriceListId");
+
+                    b.ToTable("PriceListRows");
                 });
 
             modelBuilder.Entity("cai.Service.Database.PriceListRow", b =>
                 {
                     b.HasOne("cai.Service.Database.PriceList", null)
                         .WithMany()
-                        .HasForeignKey("Id")
+                        .HasForeignKey("PriceListId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
                 });
