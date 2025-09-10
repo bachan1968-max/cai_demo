@@ -15,6 +15,9 @@ using Microsoft.Extensions.DependencyInjection.Extensions;
 using FluentEmail.Core.Interfaces;
 using FluentEmail.Smtp;
 using cai.Service.ControllerService;
+using cai.Service.Database;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 
 namespace cai
 {
@@ -76,8 +79,17 @@ namespace cai
                             services.TryAdd(ServiceDescriptor.Scoped<ISender>(provider
                                 => new SmtpSender(provider.GetRequiredService<SmtpClientFactory>().Create())));
                             services.AddSingleton(new CsvHelper.Factory());
-                            services.AddSingleton(new CsvWriterFactory(
-                                services.BuildServiceProvider().GetRequiredService<CsvHelper.Factory>())); 
+                services.AddSingleton(new CsvWriterFactory(
+                services.BuildServiceProvider().GetRequiredService<CsvHelper.Factory>()));
+
+                            services.AddScoped(provider =>
+                            {
+                                var connectionString = config.GetConnectionString("DefaultDB");
+                                var builder = new DbContextOptionsBuilder<CaiDbContext>();
+                                var options = builder.UseSqlServer(connectionString).Options;
+
+                                return new CaiDbContext(options);
+                            }); 
 
                     #region B2bHttpClient
                                 services.AddHttpClient<B2bHttpClient>()

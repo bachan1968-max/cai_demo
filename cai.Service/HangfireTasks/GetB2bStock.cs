@@ -38,16 +38,15 @@ namespace cai.Service.HangfireTasks
                     var priceOk = decimal.TryParse(i.WarePriceRUB, out decimal price);
                     if (!priceOk)
                     {
-                        _logger.LogError($"Item {i.ExternalItemId} has wrong price format: {i.WarePriceRUB}");
+                        _logger.LogError("Item {ExternalItemId} has wrong price format: {WarePriceRUB}", i.ExternalItemId, i.WarePriceRUB);
                         continue;
                     }
                     if (price == 0) continue;
-                    int amountTotal = 0;
 
-                    var amountOkReserve = int.TryParse(i.APIAvailableReservedQty, out int amountReserve);
+                    var amountOkReserve = int.TryParse(i.APIAvailableReservedQty, out int amountTotal);
                     if (!amountOkReserve)
                     {
-                        _logger.LogError($"Item {i.ExternalItemId} is not a digit: {i.APIAvailableReservedQty}");
+                        _logger.LogError("Item {ExternalItemId} is not a digit: {APIAvailableReservedQty}", i.ExternalItemId, i.APIAvailableReservedQty);
                         continue;
                     }
 
