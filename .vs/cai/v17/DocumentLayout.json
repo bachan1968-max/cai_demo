@@ -3,6 +3,22 @@
   "WorkspaceRootPath": "C:\\wwwroot\\cai_demo\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{13CB0C49-57C9-4C88-A19C-10CC85B41957}|cai.Service.Test\\cai.Service.Test.csproj|c:\\wwwroot\\cai_demo\\cai.service.test\\httpclients\\b2bhttpclienttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{13CB0C49-57C9-4C88-A19C-10CC85B41957}|cai.Service.Test\\cai.Service.Test.csproj|solutionrelative:cai.service.test\\httpclients\\b2bhttpclienttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|c:\\wwwroot\\cai_demo\\cai.service\\b2binteraction\\b2brepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|solutionrelative:cai.service\\b2binteraction\\b2brepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|c:\\wwwroot\\cai_demo\\cai.service\\httpclients\\b2bhttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|solutionrelative:cai.service\\httpclients\\b2bhttpclient.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D17FD2D7-9050-4009-9E2B-953CB69CB7FB}|cai\\cai.csproj|c:\\wwwroot\\cai_demo\\cai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D17FD2D7-9050-4009-9E2B-953CB69CB7FB}|cai\\cai.csproj|solutionrelative:cai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|c:\\wwwroot\\cai_demo\\cai.service\\hangfiretasks\\getb2bstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|solutionrelative:cai.service\\hangfiretasks\\getb2bstock.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -19,14 +35,6 @@
       "RelativeMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|solutionrelative:cai.service\\database\\pricelistrow.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{12D4A435-C4A6-43A0-9FD0-C961892B1645}|cai.Domain\\cai.Domain.csproj|c:\\wwwroot\\cai_demo\\cai.domain\\csvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{12D4A435-C4A6-43A0-9FD0-C961892B1645}|cai.Domain\\cai.Domain.csproj|solutionrelative:cai.domain\\csvdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D17FD2D7-9050-4009-9E2B-953CB69CB7FB}|cai\\cai.csproj|c:\\wwwroot\\cai_demo\\cai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D17FD2D7-9050-4009-9E2B-953CB69CB7FB}|cai\\cai.csproj|solutionrelative:cai\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|c:\\wwwroot\\cai_demo\\cai.service\\database\\idbrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D6E8B522-7043-4433-A710-09D074D80005}|cai.Service\\cai.Service.csproj|solutionrelative:cai.service\\database\\idbrepo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -38,15 +46,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 451,
-          "SelectedChildIndex": 13,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             },
             {
               "$type": "Bookmark",
@@ -73,8 +77,51 @@
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "B2bRepository.cs",
+              "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service\\B2bInteraction\\B2bRepository.cs",
+              "RelativeDocumentMoniker": "cai.Service\\B2bInteraction\\B2bRepository.cs",
+              "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Service\\B2bInteraction\\B2bRepository.cs",
+              "RelativeToolTip": "cai.Service\\B2bInteraction\\B2bRepository.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAuwBsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T16:33:34.536Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "B2bHttpClientTests.cs",
+              "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service.Test\\HttpClients\\B2bHttpClientTests.cs",
+              "RelativeDocumentMoniker": "cai.Service.Test\\HttpClients\\B2bHttpClientTests.cs",
+              "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Service.Test\\HttpClients\\B2bHttpClientTests.cs",
+              "RelativeToolTip": "cai.Service.Test\\HttpClients\\B2bHttpClientTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T15:23:53.734Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "B2bHttpClient.cs",
+              "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service\\HttpClients\\B2bHttpClient.cs",
+              "RelativeDocumentMoniker": "cai.Service\\HttpClients\\B2bHttpClient.cs",
+              "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Service\\HttpClients\\B2bHttpClient.cs",
+              "RelativeToolTip": "cai.Service\\HttpClients\\B2bHttpClient.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAIAxwCAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-11T15:19:52.268Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PriceList.cs",
               "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\PriceList.cs",
               "RelativeDocumentMoniker": "cai.Service\\Database\\PriceList.cs",
@@ -87,20 +134,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "CaiDbContext.cs",
               "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\CaiDbContext.cs",
               "RelativeDocumentMoniker": "cai.Service\\Database\\CaiDbContext.cs",
               "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\CaiDbContext.cs",
               "RelativeToolTip": "cai.Service\\Database\\CaiDbContext.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABMAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBPwBMAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-10T17:57:55.443Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PriceListRow.cs",
               "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\PriceListRow.cs",
               "RelativeDocumentMoniker": "cai.Service\\Database\\PriceListRow.cs",
@@ -113,19 +160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CsvDto.cs",
-              "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Domain\\CsvDto.cs",
-              "RelativeDocumentMoniker": "cai.Domain\\CsvDto.cs",
-              "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Domain\\CsvDto.cs",
-              "RelativeToolTip": "cai.Domain\\CsvDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-10T15:19:53.63Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "IDbRepo.cs",
               "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service\\Database\\IDbRepo.cs",
               "RelativeDocumentMoniker": "cai.Service\\Database\\IDbRepo.cs",
@@ -138,28 +173,29 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "GetB2bStock.cs",
               "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai.Service\\HangfireTasks\\GetB2bStock.cs",
               "RelativeDocumentMoniker": "cai.Service\\HangfireTasks\\GetB2bStock.cs",
               "ToolTip": "C:\\wwwroot\\cai_demo\\cai.Service\\HangfireTasks\\GetB2bStock.cs",
               "RelativeToolTip": "cai.Service\\HangfireTasks\\GetB2bStock.cs",
-              "ViewState": "AgIAAE8AAAAAAAAAAAAuwFwAAAAQAAAAAAAAAA==",
+              "ViewState": "AgIAACgAAAAAAAAAAAAIwFwAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-09T09:16:15.357Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\wwwroot\\cai_demo\\cai\\Program.cs",
               "RelativeDocumentMoniker": "cai\\Program.cs",
               "ToolTip": "C:\\wwwroot\\cai_demo\\cai\\Program.cs",
               "RelativeToolTip": "cai\\Program.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAwwEgAAAA9AAAAAAAAAA==",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAIwEkAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-05T23:50:00.265Z"
+              "WhenOpened": "2025-09-05T23:50:00.265Z",
+              "EditorCaption": ""
             }
           ]
         }

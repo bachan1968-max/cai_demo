@@ -6,6 +6,7 @@ using System.Threading;
 using Microsoft.Extensions.Logging;
 using cai.Domain;
 using System.Linq;
+using cai.Service.HttpClients;
 
 namespace cai.Service.B2bInteraction
 {

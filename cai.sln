@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cai.Service", "cai.Service\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "cai.Domain", "cai.Domain\cai.Domain.csproj", "{12D4A435-C4A6-43A0-9FD0-C961892B1645}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cai.Service.Test", "cai.Service.Test\cai.Service.Test.csproj", "{13CB0C49-57C9-4C88-A19C-10CC85B41957}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{12D4A435-C4A6-43A0-9FD0-C961892B1645}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12D4A435-C4A6-43A0-9FD0-C961892B1645}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12D4A435-C4A6-43A0-9FD0-C961892B1645}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13CB0C49-57C9-4C88-A19C-10CC85B41957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13CB0C49-57C9-4C88-A19C-10CC85B41957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13CB0C49-57C9-4C88-A19C-10CC85B41957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13CB0C49-57C9-4C88-A19C-10CC85B41957}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

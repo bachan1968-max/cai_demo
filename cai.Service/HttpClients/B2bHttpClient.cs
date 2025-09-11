@@ -6,8 +6,9 @@ using Microsoft.Extensions.Options;
 using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Threading;
+using cai.Domain;
 
-namespace cai.Domain
+namespace cai.Service.HttpClients
 {
     public class B2bHttpClient
     {

@@ -18,6 +18,7 @@ using cai.Service.ControllerService;
 using cai.Service.Database;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using cai.Service.HttpClients;
 
 namespace cai
 {
