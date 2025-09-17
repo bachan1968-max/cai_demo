@@ -254,3 +254,4 @@ paket-files/
 *.sln.iml
 /oai.fbs/oai.fbs.Services.Tests/Labels/LabelPathTests.cs
 /oai.fbs/oai.fbs/Program.cs
+cai/Logs/log20250917.txt
